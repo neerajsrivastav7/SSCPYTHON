@@ -3,7 +3,7 @@ package handlers
 import (
     "net/http"
     "github.com/gin-gonic/gin"
-	"github.com/neeraj777/sscTutorial/UserManageMent/models"
+	"github.com/neeraj777/sscTutorial/userManageMent/models"
 )
 
 type User struct{
