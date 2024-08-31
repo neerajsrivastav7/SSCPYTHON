@@ -2,8 +2,8 @@ package main
 
 import (
     "log"
-    "github.com/neeraj777/sscTutorial/userManageMent/handlers"
-    "github.com/neeraj777/sscTutorial/userManageMent/utils"
+    "github.com/neerajsrivastav7/SSCPYTHON/SScBackEnd/userManageMent/handlers"
+    "github.com/neerajsrivastav7/SSCPYTHON/SScBackEnd/userManageMent/utils"
     "github.com/gin-gonic/gin"
 )
 
