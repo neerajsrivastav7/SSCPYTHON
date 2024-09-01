@@ -2,16 +2,16 @@ package main
 
 import (
     "log"
-    "github.com/neerajsrivastav7/SSCPYTHON/SScBackEnd/userManageMent/handlers"
+    "github.com/neerajsrivastav7/SSCPYTHON/SScBackEnd/userManageMent/handler"
     "github.com/neerajsrivastav7/SSCPYTHON/SScBackEnd/userManageMent/utils"
     "github.com/gin-gonic/gin"
 )
 
 type UserManageMentRest struct {
-	auth   *handlers.Auth
-	notify  *handlers.Notification
-	admin   *handlers.Admin
-	user    *handlers.User
+	auth   *handler.Auth
+	notify  *handler.Notification
+	admin   *handler.Admin
+	user    *handler.User
 }
 func main() {
     // Load configuration

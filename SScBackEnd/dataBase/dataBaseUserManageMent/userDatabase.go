@@ -1,6 +1,6 @@
 package dataBaseUserManageMent
 import (
-	"github.com/neeraj777/sscTutorial/comman/userMdel"
+	"github.com/neerajsrivastav7/SSCPYTHON/SScBackEnd/comman/userModel"
 )
 
 type User struct {

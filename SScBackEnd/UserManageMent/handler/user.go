@@ -1,9 +1,8 @@
-package handlers
+package handler
 
 import (
     "net/http"
     "github.com/gin-gonic/gin"
-	"github.com/neeraj777/sscTutorial/userManageMent/models"
 )
 
 type User struct{
