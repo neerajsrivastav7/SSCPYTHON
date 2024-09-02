@@ -3,10 +3,11 @@ package handler
 import (
     "net/http"
     "github.com/gin-gonic/gin"
+    "github.com/neerajsrivastav7/SSCPYTHON/SScBackEnd/comman/userModel"
 )
 
 type User struct{
-
+    models userModel.UserDetails
 }
 
 func (usr *User)GetUser(c *gin.Context) {
@@ -29,11 +30,11 @@ func (usr *User)DeleteUser(c *gin.Context) {
 
 func (usr *User)ListUsers(c *gin.Context) {
     // Implement logic to list users with pagination
-    c.JSON(http.StatusOK, gin.H{"users": models.User{}})
+    c.JSON(http.StatusOK, gin.H{"users": userModel.UserDetails{}})
 }
 
 func (usr *User)SearchUsers(c *gin.Context) {
     query := c.Query("query")
     // Implement logic to search users
-    c.JSON(http.StatusOK, gin.H{"query": query, "results": []models.User{}})
+    c.JSON(http.StatusOK, gin.H{"query": query, "results": []userModel.UserDetails{}})
 }

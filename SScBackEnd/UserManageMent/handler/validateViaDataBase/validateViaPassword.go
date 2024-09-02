@@ -1,3 +1,4 @@
+// validateViaDataBase.go
 package validateViaDataBase
 
 import (
@@ -9,6 +10,13 @@ import (
 // ValidatePassFromDB is a struct that holds the user database
 type ValidatePassFromDB struct {
 	userDatabase dataBaseUserManageMent.User
+}
+
+// NewValidatePassFromDB initializes a new instance of ValidatePassFromDB
+func NewValidatePassFromDB() *ValidatePassFromDB {
+	return &ValidatePassFromDB{
+		userDatabase:  dataBaseUserManageMent.User{},
+	}
 }
 
 // ValidateViaPassword validates a username and password against the database
